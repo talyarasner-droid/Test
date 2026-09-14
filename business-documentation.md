@@ -107,6 +107,7 @@ Sugar Rush (בננות, מייפל, נוטלה) · בננה קראנץ' (בננ�
 - **טיפוגרפיה**: משפחת "NOLA" (Sloop Bold, Bold) + Lulo One/Three Bold, Neonderthaw, Buckboard Pro, Lakeside, American Typewriter
 - **פלטת צבעים**: לבן #FFFFFF · שחור #000000 · ורוד פודרה #FFC9C9 · כחול-סגול כהה #14006B
 - **סלוגנים שתועדו**: "Bottomless mimosas — All day long!", "NOLA COFFEE Addict", "American bakery", "WE RISE BY LIFTING OTHERS"
+- **נכס שיווקי ייחודי**: סדרת איורי קעקועים שעוצבה לחגיגות יום ההולדת ה-13 (קיץ 2025), מתועדת בברנד בוק. דוגמה לאיור בסדרה: "NOLA Coffee Addict". (הערה: קבצי ה-PDF "Yaya & Yarden Tattoos" שנמצאים בדרייב **אינם** קשורים לסדרה הזו — אלה קעקועים אישיים שהמייסדת עיצבה לחתונת אחותה.)
 
 ## 7. הטון שלי — מדריך קול (Voice Guide)
 
