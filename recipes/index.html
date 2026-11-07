@@ -48,10 +48,10 @@ main{padding-block:16px 120px}
 .card:hover{transform:translateY(-2px)}
 .card:focus-visible{outline:2px solid var(--accent)}
 .thumb{aspect-ratio:4/3;max-width:100%;background:var(--t1);position:relative;display:grid;place-items:center;overflow:hidden}
-.thumb img{width:100%;height:100%;object-fit:cover}
+.thumb img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;display:block}
 .thumb .word{font-family:var(--f-hand);font-size:2.3rem;opacity:.75;padding:0 10px;text-align:center;line-height:1}
-.thumb .fav{position:absolute;top:8px;inset-inline-start:8px;background:var(--card);color:var(--pop);border-radius:999px;width:28px;height:28px;display:grid;place-items:center}
-.badge-ex{position:absolute;bottom:8px;inset-inline-start:8px;background:var(--card);color:var(--muted);font-size:.75rem;border-radius:999px;padding:1px 8px}
+.thumb .fav{z-index:1;position:absolute;top:8px;inset-inline-start:8px;background:var(--card);color:var(--pop);border-radius:999px;width:28px;height:28px;display:grid;place-items:center}
+.badge-ex{z-index:1;position:absolute;bottom:8px;inset-inline-start:8px;background:var(--card);color:var(--muted);font-size:.75rem;border-radius:999px;padding:1px 8px}
 .card .body{padding:10px 12px 12px;display:flex;flex-direction:column;gap:4px;min-width:0}
 .card h3{margin:0;font-size:1.05rem;font-weight:700;line-height:1.25;text-wrap:balance}
 .meta{display:flex;flex-wrap:wrap;gap:4px 10px;font-size:.82rem;color:var(--muted)}
@@ -96,8 +96,8 @@ label.f small{font-weight:400;color:var(--muted)}
 .divider::before,.divider::after{content:"";flex:1;height:1px;background:var(--line)}
 
 /* Recipe view */
-.hero{margin-inline:calc(-1 * max(16px,env(safe-area-inset-left,0px)));aspect-ratio:16/9;max-height:300px;width:auto;background:var(--t1);display:grid;place-items:center;overflow:hidden}
-.hero img{width:100%;height:100%;object-fit:cover}
+.hero{position:relative;margin-inline:calc(-1 * max(16px,env(safe-area-inset-left,0px)));aspect-ratio:16/9;max-height:300px;width:auto;background:var(--t1);display:grid;place-items:center;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;display:block}
 .hero .word{font-family:var(--f-hand);font-size:3.4rem;opacity:.7}
 .r-title{font-family:var(--f-display);font-weight:400;font-size:1.9rem;line-height:1.15;margin:16px 0 4px;text-wrap:balance}
 .r-sum{color:var(--muted);margin:0 0 12px}
