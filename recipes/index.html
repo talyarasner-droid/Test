@@ -251,7 +251,7 @@ function render(){
   $("#empty").hidden=recipes.length>0;
   $("#grid").innerHTML=list.map(r=>`
     <button class="card" type="button" data-id="${esc(r.id)}">
-      <div class="thumb" style="background:${tile(r.category)}">
+      <div class="thumb" style="background:${r.imageUrl?'var(--line)':tile(r.category)}">
         ${r.imageUrl?`<img src="${esc(r.imageUrl)}" alt="" loading="lazy">`:`<span class="word">${esc(r.category||"מתכון")}</span>`}
         ${r.favorite?`<span class="fav" aria-label="מועדף">★</span>`:""}
         ${r.example?`<span class="badge-ex">דוגמה</span>`:""}
@@ -283,7 +283,7 @@ function openView(id){
   const ing=(r.ingredients||[]).map((l,i)=>isSec(l)?`<li class="sec">${esc(l)}</li>`:`<li><label><input type="checkbox" id="ing-${i}"><span>${esc(l)}</span></label></li>`).join("");
   const steps=(r.steps||[]).map(l=>isSec(l)?`<li class="sec">${esc(l)}</li>`:`<li><span>${esc(l)}</span></li>`).join("");
   $("#viewBody").innerHTML=`
-    <div class="hero" style="background:${tile(r.category)}">${r.imageUrl?`<img src="${esc(r.imageUrl)}" alt="">`:`<span class="word">${esc(r.category||"מתכון")}</span>`}</div>
+    <div class="hero" style="background:${r.imageUrl?'var(--line)':tile(r.category)}">${r.imageUrl?`<img src="${esc(r.imageUrl)}" alt="">`:`<span class="word">${esc(r.category||"מתכון")}</span>`}</div>
     <h2 class="r-title">${esc(r.title)}</h2>
     ${r.summary?`<p class="r-sum">${esc(r.summary)}</p>`:""}
     <div class="facts">
